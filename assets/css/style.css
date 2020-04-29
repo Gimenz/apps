@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+.logo-image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-top: -7px;
+}
+footer.footer a:hover {
+  color: #4e44e4;
+  font-weight: 600;
+  transition: all 0.5s;
+}
+.apps {
+  margin-top: 60px;
+  text-align: center;
+}
+.content {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 30px
+}
+.post {
+  background-color: #fff;
+  margin-bottom: 30px;
+font-size: 1.1em;
+line-height: 28px;
+box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0), 0 3px 7px 0px rgba(0, 0, 0, 0.11), 0 1px 3px 0 rgba(0, 0, 0, 0);
+}
+.icon img {
+  height: 60px;
+}
+.hapus {
+  color: #3e3e3e;
+}
+.hapus a:hover {
+  color: #e33;
+  box-shadow: 0 rgba(0, 0, 0, 0.11);
+}
+.anim {
+  transition: all 0.5s ease;
+}
+.btn-facebook {
+  color: #3b5999;
+  background-color: silver;
+}
+.btn-twitter {
+  color: #55acee;
+  background-color: silver;
+}
+.btn-instagram {
+  color: #e4405f;
+  background-color: silver;
+}
+.btn-facebook:hover {
+  background-color: #3b5999;
+}
+.btn-twitter:hover {
+  background-color: #55acee;
+}
+.btn-instagram:hover {
+  background-color: #e4405f;
+}

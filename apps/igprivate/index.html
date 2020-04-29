@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Instagram Private Photo Downloader - Mg Apps</title>
+   <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <link rel="icon" type="image/png" href="../../assets/img/logo.png">
+  <!--     Fonts and icons     -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Material Kit CSS -->
+  <link rel="stylesheet" href="../../assets/demo/demo.css">
+  <link href="../../assets/css/material-kit.css" rel="stylesheet" />
+  <link href="../../assets/css/style.css" rel="stylesheet" />
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Instagram Private Photo Downloader">
+  <meta name="description" content="Download foto atau post instagram di akun private ataupun tidak">
+  <meta name="keywords" content="instagram private post downloader, instagram downloader, instagram private photo downloader, instagram private downloader, download insta photo, insta save, insta saver, insta private saver, insta downloader">
+  <meta name="author" content="masgimenz">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://apps.masgimenz.com/">
+  <meta property="og:title" content="Instagram Private Photo Downloader">
+  <meta property="og:description" content="Download foto atau post instagram di akun private ataupun tidak">
+  <meta property="og:image" content="https://apps.masgimenz.com/assets/img/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://apps.masgimenz.com/">
+  <meta property="twitter:title" content="Instagram Private Photo Downloader">
+  <meta property="twitter:description" content="Download foto atau post instagram di akun private ataupun tidak">
+  <meta property="twitter:image" content="https://apps.masgimenz.com/assets/img/logo.png">
+  <script data-ad-client="ca-pub-3281698328174392" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body class="index-page sidebar-collapse">
+  <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand" href="/">
+          <img class="logo-image" src="../../assets/img/logo.png"/>
+          <strong>Mg Apps</strong> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="dropdown nav-item">
+            <a href="../../apps/" class="nav-link"">
+              <i class="material-icons">apps</i> Apps
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.instagram.com/gimenz.id" target="_blank" data-original-title="Follow me" rel="nofollow">
+              <i class="fa fa-instagram" style="color: #e44;"></i> Follow Me
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="page-header header-filter" data-parallax="true" style="background-image: url('../../assets/img/indonesia.jpg');">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 ml-auto mr-auto">
+          <div class="brand">
+            <h1>Instagram Private Photo Downloader</h1>
+            <h3>Mau download foto di instagram? tapi akun target di Private?
+              Pake Tools ini aja, bisa untuk akun public dan private</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main main-raised">
+    <div class="section section-basic">
+      <div class="container">
+        <div style="text-align: center;">
+          <button type="button" class="btn btn-sm btn-danger" role="button" data-toggle="popover" data-trigger="focus" data-placement="top" title="Gini loh, baca dulu." data-content="Masukkan link pada form di bawah, kemudian tekan enter dan tunggu sampai gambar muncul, baru klik tombol download">Caranya gimana?</button>
+        </div>
+        <br>
+        <div class="form-group label-floating has-success">
+          <label onerror="error"for="instalink">Masukkan link post ig</label>
+					<input id="instalink" class="form-control "
+						placeholder="example : https://www.instagram.com/p/Bxr8_LWnAiBa0b/" spellcheck="false"
+						onsubmit="insta_function(instalink.value);ShowMain()" autocomplete="off" />
+        </div>
+        <br>
+        <div class="alert alert-info">
+          <div class="container">
+            <div class="alert-icon">
+              <i class="material-icons">info_outline</i>
+            </div>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true"><i class="material-icons">clear</i></span>
+            </button>
+            <b>Info :</b> Klik kanan pada tombol Download, kemudian pilih "Save link as" untuk menyimpan gambar.
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <button id="imagedloadbtn" class="btn btn-success" style="display: none;" type="button"
+					onclick="insta_function(instalink.value);ShowMain()">GO</button>
+          <img style="width:40%;" class="img-raised rounded img-fluid" id="imgpreview" src="images/heart.png"
+          onerror="this.style.display='none'" />
+          <br>
+          <br>
+			    <!-- Download Buttons -->
+          <div id="download-buttons">
+            <a target="_blank" id="imagehq" download><button
+                class="btn btn-success">DOWNLOAD</button>
+            </a>
+          </div>
+        </div>
+        <br>
+        <!-- kode iklan -->
+        <div style="text-align: center;">
+          <!-- kode iklan -->
+          <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- ads apps responsive -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="ca-pub-3281698328174392"
+               data-ad-slot="1823410189"
+               data-ad-format="auto"
+               data-full-width-responsive="true"></ins>
+          <script>
+               (adsbygoogle = window.adsbygoogle || []).push({});
+          </script></div>
+      </div>
+    </div>
+  </div>
+  <footer class="footer" data-background-color="black">
+    <div class="container">
+      <nav class="float-left">
+        <ul>
+          <li>
+            <a href="../../about">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="../../contact/">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href="https://unsplash.com/">
+              Image Credit
+            </a>
+          </li>
+          <li>
+            <a href="../sitemap.xml">
+              Sitemap
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright float-right">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear())
+        </script> made with <i class="material-icons" style="color: #e44;">favorite</i> by
+        <a href="https://www.masgimenz.com/" target="blank">masgimenz</a>. Theme by <a href="https://github.com/creativetimofficial/material-kit" target="blank">Material Kit</a>.
+      </div>
+    </div>
+  </footer>
+  <!--   Core JS Files   -->
+  <script src="../../assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/core/bootstrap-material-design.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/plugins/moment.min.js"></script>
+  <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker -->
+  <script src="../../assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="../../assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <script src="../../assets/js/material-kit.js?v=2.0.7" type="text/javascript"></script>
+  <script src="../../assets/js/instaimage.js"></script>
+  <script>
+    $('#instalink').keydown(function (e) {
+        var keyCode = (e.keyCode ? e.keyCode : e.which);
+        if (keyCode == 13) {
+            $('#imagedloadbtn').trigger('click');
+        }
+    });
+  </script>
+  <script>
+      $('.popover-dismiss').popover({
+        trigger: 'focus'
+      })
+  </script>
+  <script>
+      var realImage = document.getElementById('imgpreview');
+      var loadingImage = document.getElementById('loadingImage');
+      loadingImage.style.display = 'inline';
+      realImage.style.display = 'none';
+
+      // Create new image
+      var imgPreloader = new Image();
+      // define onload (= image loaded)
+      imgPreloader.onload = function () {
+          realImage.src = imgPreloader.src;
+          realImage.style.display = 'inline';
+          loadingImage.style.display = 'none';
+      };
+      // set image source
+      imgPreloader.src = '../../assets/img/loading.gif';
+  </script>
+</body>
+</html>
