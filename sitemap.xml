@@ -2,37 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>
     <loc>https://apps.masgimenz.com</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://apps.masgimenz.com/sitemap.xml</loc>
+    <changefreq>always</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://apps.masgimenz.com/contact/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://apps.masgimenz.com/apps/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.1</priority>
-  </url>
-  <url>
-    <loc>https://apps.masgimenz.com/about/</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://apps.masgimenz.com/</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://apps.masgimenz.com/apps/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://apps.masgimenz.com/about/</loc>
+    <changefreq>always</changefreq>
+    <priority>0.1</priority>
+  </url>
+  <url>
+    <loc>https://apps.masgimenz.com/apps/walink/</loc>
+    <changefreq>always</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://apps.masgimenz.com/apps/igprivate/</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
     <loc>https://apps.masgimenz.com/apps/line/</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>always</changefreq>
     <priority>0.1</priority>
   </url>
 </urlset>
+<!--<guid value="b5bb5f8b-cbc3-4c87-a46b-98739e48a3b6" />-->
